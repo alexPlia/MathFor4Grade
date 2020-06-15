@@ -1,0 +1,154 @@
+#train {
+      position: relative;
+      cursor: pointer;
+    }
+.logo{
+	float: left;
+	margin: 5px;
+}
+.logo_right{
+	float: right;
+	margin: 5px;
+}
+h2{
+  padding: 20px;
+   
+   	background: rgba(255, 165, 0, 0.87);	
+}
+.inpt{
+	position: absolute;
+	left: 200px;
+}
+.info {
+    padding: 10px;
+}
+.find{
+position: absolute;
+	left: 150px;
+	margin: 5px;
+
+	
+	  font-weight: 700;
+  color: white;
+  text-decoration: none;
+	background: #FF9F40;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+ 
+
+  box-shadow: 0 -3px #FF7F00 inset;
+  transition: 0.2s;
+} 
+
+
+button:hover { background: #FF7F00; } /* при наведении курсора мышки */
+button:active { background: #FF6F00; } /* при нажатии */
+td>img{
+	text-align: center;
+	align-content: center;
+}
+.fa{
+	color: orange;
+}
+
+/*MENU STYLE*/
+.advantages-2 {
+	
+	text-align: center;
+/*	background-image:url(logoMath.png);*/
+	
+/*	background-image: linear-gradient(to bottom, rgb(255,111,0,0.9),rgb(253,210,173,0.9));*/
+	background-color:rgba(255, 165, 0, 0.87);
+	
+}
+.advantages-2 .advant-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 22%;
+	margin: 1%;
+	text-align:left;
+	
+}
+.advantages-2 .flex-wrap {
+	display: flex;
+	align-items: center;
+	
+}
+.advantages-2 img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	margin-right: 10px;
+}
+	.advantages-2 span {
+	font-size: 15px;
+		padding: 4px;
+		font-family: Segoe Print;
+		
+}
+@media screen and (max-width:690px){
+	.advantages-2 .advant-item {
+		width: 45%;
+	}
+}
+@media screen and (max-width:400px){
+	.advantages-2 .advant-item {
+		width: 100%;
+		margin: 15px 0;
+	}
+}
+/*END MENU*/
+a{text-decoration: none; color: white;font-size: 14pt;}
+.logoIMG{
+	width: 100%;
+	height: 400px;
+	margin: 0;
+}
+
+
+span.text_big {
+    font-weight: 600;
+    font-size: 12pt;
+    font-family: Verdana;
+}
+i{
+	color: black;
+}
+.first{
+	font-size: 16pt;
+	font-weight: 700;
+	
+}
+td{
+	padding: 10px;
+	
+}
+.math{
+	font-size: 16pt;
+}
+.checker{
+		  font-weight: 700;
+  color: white;
+  text-decoration: none;
+	background: #FF9F40;
+}
+.teacher{
+	
+	width: 100%;
+	
+}
+a:hover {
+
+    font-size: 15pt;
+    font-weight: 600;
+}
+/**/
+div#content    {
+    font-size: 14pt;
+}
+div#contentForS{
+    font-size: 14pt;
+}
+div#contentFort{
+    font-size: 14pt;
+}

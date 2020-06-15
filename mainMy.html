@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!--	jQuery-->
+	<script data-brackets-id='3074' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+<!--fa icons-->
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<script data-brackets-id='3075' src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--	jQuery-->
+	<script data-brackets-id='3076' src="mainMy.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="styleMy.css"> 
+</head>
+<body>
+
+         
+<!--         Start  MENU-->
+         
+         <div class="advantages-2">
+	<div class="advant-item">
+		<div class="flex-wrap">
+			<i class='fas fa-biking' style='font-size:20px; '></i><span><a href="#speed"> Розрахувати швидкість</a></span>
+		</div>
+	</div>
+	<div class="advant-item">
+		<div class="flex-wrap">
+		<i class='fas fa-route' style='font-size:20px; '></i> <span><a href="#distanse"> Розрахувати відстань </a></span>
+		</div>
+	</div>
+	<div class="advant-item">
+		<div class="flex-wrap">
+			<i class='far fa-clock' style='font-size:20px; '></i><span><a href="#time"> Розрахувати час </a></span>
+		</div>
+	</div>
+		<div class="advant-item">
+		<div class="flex-wrap">
+			<i class='fas fa-book' style='font-size:20px'></i><span><a href="#time"> Довідник </a></span>
+		</div>
+	</div>
+	
+		
+	
+</div>
+         
+         
+<!--         END  MENU-->
+         
+        
+
+      <img src="mathgreen.png"   class="logoIMG" alt="">
+    <div class="top_content">         
+        <div class="item">
+                 
+                
+            <div class="br"></div>
+            
+            <div class="fl title">
+                                <div class="fr"> 
+									<span data-title=""  class="add_to_fav">&nbsp;</span>
+                                <div class="anchor fr">
+                    <h1>Задачі на рух для 4 класу</h1>
+                </div>
+            </div>
+            
+                        
+            
+            <div class="content fl">
+                Калькулятор <strong>Швидкість, відстань, час </strong> - перевір свої знання </div>
+                        
+
+        </div>
+		</div>
+       
+         <div class="item" id="speed">
+        	<h2>Знайти швидкість - V</h2>
+        				<table width="100%" cellspacing="0" cellpadding="0">
+        				<td>	
+        				<div class="info">
+        				<label for="">Введіть відстань - S </label><input class="inpt" id ="SforV" type="number" placeholder="Введіть число" name="SforV">	</div>
+       	<div class="info"><label for="">Введіть час -  t </label><input class="inpt" id ="tforV" type="number" placeholder="Введіть число" name="tforV">
+       	</div> 
+
+       	<button id="run" class="find">Знайти швидкість</button><br><br><br><br>
+       <div id="content" style="display:none;"> </div>
+       	<br></td>
+
+		
+      	  <td><img  style="position: relative; left: 10px; width: 250px; height: 150px; " id="train" src="carLambo.png"></td>
+       	        	
+			 </table>
+			</div>
+			        <!--			Конец Для скорости -->
+			        
+			        
+<!--			Для расстояния -->
+			 <div class="item" id="distanse">
+			<h2>Знайти відстань - S</h2>
+			<table width="100%" cellspacing="0" cellpadding="0">
+			<td>
+						<div class="info"><label for="">Введіть швидкість - V </label><input class="inpt" id ="VforS" type="number" placeholder="Введіть число" name="VforS">	</div>
+       	<div class="info"><label for="">Введіть час -  t </label><input placeholder="Введіть число" class="inpt" id ="tforS" type="number" name="tforS"></div>
+       	<button id="findS" class="find">Знайти відстань</button><br><br><br><br>
+       <div id="contentForS" style="display:none;"> </div>
+       	<br>
+				
+			</td>
+	
+      	  <td>
+      	  	<p style="display:none;"></p>
+      	  	<i class="	fas fa-map-marker-alt"  style='font-size:48px;color:orange'></i>
+      	  	<i class='fas fa-long-arrow-alt-right' style='font-size:36px'></i>
+      	  	<i class='fas fa-long-arrow-alt-right' style='font-size:36px'></i>
+      	  	<i class='fas fa-long-arrow-alt-right' style='font-size:36px'></i>
+      	  	<i class="	fas fa-map-marker-alt" style='font-size:48px;color:darkorange' ></i>
+   
+<!--      	  	<img  style="width: 250px; height: 100px; " id="AtoB" src="AtoB.png">-->
+      	  </td>
+       	  
+				 </table>
+			</div>
+			
+	<!--		THE END	Для расстояния -->	
+			
+					
+				<!--			Для времени t -->	
+			 <div class="item" id="time">
+			<h2>Знайти час -  t</h2>
+			<table width="100%" cellspacing="0" cellpadding="0">
+			<td>
+				<div class="info"><label for="">Введіть швидкість - V </label><input class="inpt" id ="Vfort" type="number" name="Vfort" placeholder="Введіть число">	</div>
+       	<div class="info"><label for="">Введіть відстань - S </label><input class="inpt" id ="Sfort" type="number" placeholder="Введіть число" name="Sfort"></div>
+       	<button id="findt" class="find">Знайти час</button><br><br><br><br>
+       	
+       <div id="contentFort" style="display:none;"> </div>
+       	<br>
+				
+			</td>
+			
+      	  <td><img  id="clock" style="display:none; width: 150px;height: 120px" src="clock.gif" alt="clockAnimation">
+</td>
+				 </table>
+			</div>
+				<!--	Конец		Для времени t -->
+				
+				
+				
+				
+							 <div class="item" id="helper">
+			<h2>Довідничок. </h2>
+		
+			
+					<table width="100%" cellspacing="0" cellpadding="0">
+							 <td style="width: 20%"><img src="teacher.gif" class="teacher" alt="teacher"></td>
+							 <td><img src="table.png" alt=""></td>
+							 	 <td ><img src="svt.png" style="width: 90%" alt=""></td>
+						
+								 </table>
+				
+				
+			
+						</div>
+						
+						
+<!--						для задач-->
+						
+							 <div class="item" id="helper">
+			<h2>Типові задачі: </h2>
+	<table width="100%" cellspacing="0" cellpadding="0" style="text-align: center;" class="math">
+			<tr class="first">
+			<td>Об'єкт, що рухається</td>
+			<td>Швидкість V</td>
+			<td>Відстань S</td>
+			<td>час t</td>
+			<td>Поле для вводу відповіді</td>
+</tr>
+						<!--		задача 1-->
+				 <tr>
+			<td><i class="fa fa-car" style="font-size: 24pt; color: darkorange;"></i></td>
+		 	<td>?</td>
+		 	<td>160 км</td>
+		 	<td>2 год</td>
+					 <td>
+<input type="number" id="checkCar" placeholder="Введіть число"><button id="check" class="checker">Перевірка</button>
+		 	<p id="perevir" style="display:none;"></p></td>
+			 	
+				 	
+				 	
+				 </tr>
+			 				 
+			 				 
+<!--			 				 задача 2-->
+				 				 <tr>
+			<td><i class="fa fa-plane" style="font-size: 24pt; color: darkorange;"></i></td>
+		 	<td>120</td>
+		 	<td>?</td>
+		 	<td>3 год</td>
+					 <td>
+<input type="number" id="checkPlane" placeholder="Введіть число"><button id="check2" class="checker">Перевірка</button>
+		 	<p id="perevir2" style="display:none;"></p></td>
+			 	
+				 	
+				 	
+				 </tr>
+				 
+				 <!--			 				 задача 3-->
+				 				 <tr>
+			<td><i class="fa fa-helicopter" style="font-size: 24pt; color: darkorange;"></i></td>
+		 	<td>120</td>
+		 	<td>480</td>
+		 	<td>?</td>
+					 <td>
+<input type="number" id="checkPlane3" placeholder="Введіть число"><button id="check3" class="checker">Перевірка</button>
+		 	<p id="perevir3" style="display:none;"></p></td>
+			 		
+				 </tr>
+				 			 				 
+
+				 </table>
+			
+				
+		
+			
+						</div>
+		</div>
+		
+		
+	  
+</body>
+</html>
