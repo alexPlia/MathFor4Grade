@@ -5,9 +5,13 @@ $(document).ready(function(){
 
          $("#train").animate({opacity: "1", left: "=10"}, "slow");
 		var valueSforV=$("#SforV").val();
+		
 		var valuetforV=$("#tforV").val();
+		
 		var resultV=parseFloat(valueSforV)/parseFloat(valuetforV);
-		 $("#content").html("При відстані "+valueSforV+" за час " + valuetforV +"швидкість дорівнює = " + resultV).show("slow");
+		
+		if(valueSforV>0 && valuetforV>0 ){$("#content").html("При відстані "+valueSforV+" за час " + valuetforV +"швидкість дорівнює = " + resultV).show("slow");} 
+		else{alert("Помилка введення значень! Виправте значення.");}
     });
 	
 	
@@ -20,7 +24,9 @@ $(document).ready(function(){
 		var valueVforS=$("#VforS").val();
 		var valuetforS=$("#tforS").val();
 		var resultS=parseFloat(valueVforS)*parseFloat(valuetforS);
-		$("#contentForS").html("При швидкості "+valueVforS+" за час "+valuetforS+" відстань дорівнює = "+resultS).show(1000);
+		if(valueVforS>0 && valuetforS>0){$("#contentForS").html("При швидкості "+valueVforS+" за час   "+valuetforS+" відстань дорівнює = "+resultS).show(1000);}
+		else{alert("Помилка введення значень! Виправте значення.");}
+		   
 	});
 	
 		/*расчет времени  t*/
@@ -32,8 +38,9 @@ $(document).ready(function(){
 		var valueVfort=$("#Vfort").val();
 		
 		var resultt=parseFloat(valueSfort)/parseFloat(valueVfort);
+		if(valueSfort>0 && valueVfort>0 ){$("#contentFort").html("При швидкості "+valueVfort+" долаючи відстань "+valueSfort+" час дорівнює = "+resultt).show(1000);}
 		
-		$("#contentFort").html("При швидкості "+valueVfort+" долаючи відстань "+valueSfort+" час дорівнює = "+resultt).show(1000);
+		else{alert("Помилка введення значень! Виправте значення.");}
 	});
 	
 	var arr = new Map([
